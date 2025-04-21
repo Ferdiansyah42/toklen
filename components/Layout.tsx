@@ -1,12 +1,11 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
+import ListMusic from './ListMusic';
 
 const Layout = () => {
-  return (
-    <View className='flex h-screen items-center justify-center'>
-        <Text className='text-3xl font-semibold'>Aplikas Music</Text>
-    </View>
-  )
-}
+    const [tabselected, settabselected] = useState<"list"  | "playing">("list");
+
+  return <>{tabselected === "list" ? <ListMusic/> : <ListMusic/>}</>;
+};
 
 export default Layout
