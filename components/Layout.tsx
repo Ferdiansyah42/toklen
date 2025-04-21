@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import React, {useState} from 'react'
 import ListMusic from './ListMusic';
 import Playing from "./Playing";
@@ -9,9 +9,10 @@ const Layout = () => {
 
   return (
   <>
-    <LinearGradient
-    colors={["#212528", "#111315"]}>
+    <LinearGradient colors={["#212528", "#111315"]}>
+        <SafeAreaView>
         {tabselected === "list" ? <ListMusic/> : <Playing />}
+        </SafeAreaView>
     </LinearGradient>
   </>
   );
