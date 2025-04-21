@@ -4,7 +4,7 @@ import "../global.css";
 
 const _layout = () => {
   return (
-    <View>
+    <View className='flex h-screen items-center justify-center'>
       <Text>_layout</Text>
     </View>
   )
