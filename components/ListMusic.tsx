@@ -3,8 +3,8 @@ import React from 'react'
 
 const ListMusic = () => {
   return (
-    <View>
-      <Text>ListMusic</Text>
+    <View className='flex h-screen items-center justify-center'>
+        <Text className='text-3xl font-semibold'>Aplikas Music</Text>
     </View>
   )
 }
